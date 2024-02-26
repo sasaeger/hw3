@@ -1,0 +1,14 @@
+﻿@ExceptionHandling_HostAddress = https://localhost:7981
+
+POST {{ExceptionHandling_HostAddress}}/api/exception
+Content-Type: application/json
+
+{ 
+  "summary":"1234567890"
+}
+
+###
+
+GET {{ExceptionHandling_HostAddress}}/api/exception/0
+
+###
